@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  Image,
-  StyleSheet,
-  Text,
-  Button,
-  TouchableOpacity,
-} from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 
 import { AppLoading } from "expo";
 
@@ -30,25 +23,24 @@ const AppButton = ({
   });
 
   if (!fontsLoaded) {
-     <AppLoading />;
+    <AppLoading />;
   }
 
   return (
     <TouchableOpacity
       style={{
         alignItems: "center",
-        marginVertical: 10,
+        marginVertical: 12,
         width: 320,
         backgroundColor: buttonBackgroundColor,
-        justifyContent:"center",
+        justifyContent: "center",
         height: 60,
-        borderRadius:12
+        borderRadius: 12,
       }}
       onPress={buttonPress}
     >
       <Text
         style={{
-         
           fontFamily: "ABeeZee_400Regular",
           fontSize: theme.FONT_SIZE_Normal,
           fontWeight: theme.FONT_WEIGHT,

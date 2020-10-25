@@ -1,25 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { View, Image, StyleSheet, Text } from "react-native";
 
-import SelectLanguage from "./Components/SelectLanguage";
-import HomeAnimation from "./Components/HomeAnimation";
-
+import HomeAnimation from "./screens/HomeAnimation";
+import  Navigator from "./routes/navigator";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  useState(() => setTimeout(() => setIsLoading(false), 5000), []);
+  useState(() => setTimeout(() => setIsLoading(false), 9000), []);
 
   return (
     <View style={styles.container}>
       {isLoading && (
         <View>
-        
           <HomeAnimation />
         </View>
       )}
-
-      {!isLoading && <SelectLanguage />}
+      {!isLoading && <Navigator/>}
     </View>
   );
 };

@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {
-  StyleSheet,
-  View,
-  Animated,
-  Text,
-  LogBox,
-  ImageBackground,
-} from "react-native";
+import { StyleSheet, View, Animated, LogBox } from "react-native";
 
 import CarSvg from "../../Svgs/CarSvg";
-import theme from "../../Styles/theme.style"
+import theme from "../../Styles/theme.style";
 
 LogBox.ignoreLogs([
   "Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`",
@@ -61,7 +54,7 @@ const HomeAnimation = () => {
           height: 100,
           width: 100,
           borderRadius: 50,
-          backgroundColor:theme.SECONDARY_COLOR,
+          backgroundColor: theme.SECONDARY_COLOR,
           opacity: opacityB,
           zIndex: -1,
           transform: [{ scale: animated2 }],
