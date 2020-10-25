@@ -9,17 +9,17 @@ import Layout from "../../Components/Layout";
 const SelectLanguage = () => {
   const navigation = useNavigation();
 
-  const [buttonBackgroundColor, setButtonBackgroundColor] = useState("none");
+  const [buttonBackgroundColor, setButtonBackgroundColor] = useState("white");
   const [buttonColor, setButtonColor] = useState("rgba(4,16,121,1)");
   const [buttonBackgroundColorNep, setButtonBackgroundColorNep] = useState(
-    "none"
+    "white"
   );
   const [buttonColorNep, setBUttonColorNep] = useState("rgba(4,16,121,1)");
 
   const buttonPressEnglish = () => {
     setButtonBackgroundColor("rgba(4,16,121,1)");
     setButtonColor("white");
-    setButtonBackgroundColorNep("transparent");
+    setButtonBackgroundColorNep("white");
     setBUttonColorNep("rgba(4,16,121,1)");
     navigation.navigate("Number");
   };
@@ -27,7 +27,7 @@ const SelectLanguage = () => {
   const buttonPressNepali = () => {
     setButtonBackgroundColorNep("rgba(4,16,121,1)");
     setBUttonColorNep("white");
-    setButtonBackgroundColor("transparent");
+    setButtonBackgroundColor("white");
     setButtonColor("rgba(4,16,121,1)");
     navigation.navigate("Number");
   };

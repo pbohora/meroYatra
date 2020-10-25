@@ -46,7 +46,7 @@ const HomeAnimation = () => {
 
   return (
     <View style={styles.container}>
-      <CarSvg width="200px" height="200px" />
+      <CarSvg style={{zIndex:100}} width="200px" height="200px" />
 
       <Animated.View
         style={{
